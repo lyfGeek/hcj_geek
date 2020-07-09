@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        'use struct';
+        // es6。
+        // Map。
+        // var names = ['Tom', 'Geek', 'haha'];
+        // var scores = [100, 90, 80];
+
+        var map = new Map([['Tom', 100], ['Geek', 90], ['haha', 80]]);
+        let name = map.get('Geek');
+        console.log(name);
+
+        map.set('admin', 123);
+        map.delete('haha');
+
+        let set = new Set([3, 1, 1, 1, 1, 1]);// set 可以去重。
+        set.add(2);
+        set.delete(1);
+        console.log(set);
+        console.log(set.has(3));
+
+        let arr = [1, 2, 3];
+        for (let x in arr) {// 索引值。
+            console.log(x)
+        }
+
+        for (let x of arr) {// 元素值。
+            console.log(x)
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+</body>
+</html>

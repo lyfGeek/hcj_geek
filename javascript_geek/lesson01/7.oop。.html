@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        let user = {
+            name: 'geek',
+            age: 3,
+            run: function () {
+                console.log(this.name + ' run...')
+            }
+        };
+
+        let xiaoming = {
+            name: 'xiaoming'
+        };
+        // xiaoming,run()
+        //     VM38:1 Uncaught ReferenceError: run is not defined
+        //     at <anonymous>:1:1
+
+        // xiaoming 的原型是 user。
+        xiaoming.__proto__ = user;
+        // xiaoming.run()
+        // 7.oop。.html?_ijt=klpgq76rgcrn5ucu223jrmf8ud:12 xiaoming run...
+        // undefined
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

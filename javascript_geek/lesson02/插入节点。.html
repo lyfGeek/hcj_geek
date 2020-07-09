@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="js">JavaScript</p>
+<div id="list">
+    <p id="ee">JavaEE</p>
+    <p id="se">JavaSE</p>
+    <p id="me">JavaME</p>
+</div>
+
+
+<script>
+    let js = document.getElementById('js');
+    let list = document.getElementById('list');
+    // list.appendChild(js);
+
+    // 创建一个新节点。
+    let newP = document.createElement('p');
+    newP.id = 'newP';
+    newP.innerText = 'Hello, geek';
+
+    list.appendChild(newP);
+
+    // 创建一个标签节点。
+    // let myScript = document.createElement('script');
+    // myScript.setAttribute('type', 'text/javascript');
+
+    let myStyle = document.createElement('style');
+    myStyle.setAttribute('type', 'text/css');
+    myStyle.innerHTML = 'body {background-color: deepskyblue}';
+    document.getElementsByTagName('head')[0].appendChild(myStyle)
+</script>
+
+</body>
+</html>

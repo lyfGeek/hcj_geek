@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        let now = new Date();
+        // console.log(now)
+        // VM92:1 Tue Jul 07 2020 16:37:03 GMT+0800 (中国标准时间)
+        // undefined
+
+        let year = now.getFullYear();// 年。
+        console.log(year);
+        let month = now.getMonth() + 1;// 月。
+        console.log(month);
+        let date = now.getDate();// 日。
+        console.log(date);
+        let day = now.getDay();// 星期。
+        console.log(day);
+        let hours = now.getHours();// 时。
+        console.log(hours);
+        let minutes = now.getMinutes();// 分。
+        console.log(minutes);
+        let seconds = now.getSeconds();// 秒。
+        console.log(seconds);
+
+        now.getTime();// 时间戳。全世界统一。1970 1.1. 00:00:00。
+
+        // now.toLocaleString()
+        // "2020/7/7 下午4:43:47"
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

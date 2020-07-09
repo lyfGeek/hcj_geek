@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // function Student(name) {
+    //     this.name = name;
+    // }
+    //
+    // // 给 student 对象增加一个方法。
+    // Student.prototype.hello = function () {
+    //     alert('Hello.');
+    // };
+
+    // es 6。~ ~ ~ ~ ~ ~ ~
+    class Student {
+        constructor(name) {
+            this.name = name;
+        }
+
+        hello() {
+            alert('hello');
+        }
+    }
+
+    class Pupil extends Student {
+        constructor(name, grade) {
+            super(name);
+            this.grade = grade;
+        }
+
+        myGrade() {
+            alert('我是一名小学生。')
+        }
+    }
+
+    let xiaoming = new Student('xiaoming');
+    let xiaohong = new Pupil('xiaohong', 1);
+
+</script>
+
+
+</body>
+</html>

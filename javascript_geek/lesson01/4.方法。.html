@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        // var geek = {
+        //     name: 'Geek',
+        //     birthday: 1995,
+        //     // 方法。（对象中的函数）。
+        //     age: function () {
+        //         // 今年 - 出生的年。
+        //         let now = new Date().getFullYear();
+        //         return now - this.birthday;
+        //     }
+        // }
+
+        function getAge() {
+            // 今年 - 出生的年。
+            let now = new Date().getFullYear();
+            return now - this.birthday;// this 指向调用者 window。
+        }
+
+        var geek = {
+            name: 'Geek',
+            birthday: 1995,
+            age: getAge
+        };
+
+        getAge.apply(geek, []);// this 指向了 geek，参数为空。
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>
